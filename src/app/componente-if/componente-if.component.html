@@ -1,0 +1,13 @@
+<p>desde componente IF</p>
+<h3>estado de autenticacion </h3>
+
+<!-- directiva if se inicializa con el @ donde se muestra un valor dependiendo su valor booleano -->
+<div>
+    @if (auntenticado) {
+        <p class="text-success">estas autenticado</p>
+    }@else {
+        <p class="text-danger">no estas autenticado</p>
+    }
+</div>
+
+<button (click)="cambiar()">cambiar valor</button>

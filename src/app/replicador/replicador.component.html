@@ -1,0 +1,17 @@
+<!-- concepto de property binding -->
+
+<div class="d-flex justify-content-center">
+    <div class="w-50">
+        <div class="mb-3">
+            <label for="inputTexto">escribe aqui</label>
+            <input id="inputTexto" type="text" (input)="actulizartexto($event)"/>
+        </div>
+
+        <div class="mn-3">
+            <label for="replicartexto">texto replicado</label>
+            <input id="replicartexto"  type="text" [value]="texto" readonly>
+        </div>
+    </div>
+
+    
+</div>

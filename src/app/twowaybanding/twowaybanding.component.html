@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+  <div class="w-50">
+    <div class="mb-3">
+        <label for="inputTexto" class="mx-2">mensaje:</label>
+        <input type="text" id="inputTexto" [(ngModel)]="saludo" autocomplete="off"/> <!--ngmodel para conectarnos a la variable saludo y podemos modificar su valor desde el DOM-->
+
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <div class="alert alert-info mt-4 mx-auto w-50">
+        {{ saludo }}
+    </div>
+  </div>
+</div>

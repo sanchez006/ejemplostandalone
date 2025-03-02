@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h2 class="text-center">Lista tareas</h2>
+    <ul class="list-group w-50 mx-auto">
+
+            <!-- con en un for normal se crea una varible y se vincula con la variable que ya tenemos creada el "track tareas" es necesario -->
+        @for (tarea of tareas; track tarea) {
+            <li class="list-group-item text-center">{{tarea}}</li>
+        }
+        
+    </ul>
+    <div  class="list-group w-50 mx-auto">
+        <input type="text" [(ngModel)]="nuevotexto">
+
+        <button  (click)="agregarTarea(nuevotexto); nuevotexto= '' " >agregar</button>
+    </div>
+   
+</div>
