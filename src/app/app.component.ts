@@ -9,6 +9,7 @@ import { TwowaybandingComponent } from "./twowaybanding/twowaybanding.component"
 import { ComponenteIFComponent } from "./componente-if/componente-if.component";
 import { ComponenteForComponent } from "./componente-for/componente-for.component";
 import { ViewChildComponent } from './view-child/view-child.component';
+import { MensajeService } from './mensaje.service';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,12 @@ import { ViewChildComponent } from './view-child/view-child.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'componente View Child';
+  title = 'servicios en angular';
+  mensaje:string;
+
+// inyectamos dependencia para inyectar el servicio 
+  constructor(mensajeService: MensajeService){
+    this.mensaje=mensajeService.obtenermensaje();
+  }
 }
  
