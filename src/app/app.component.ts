@@ -10,20 +10,21 @@ import { ComponenteIFComponent } from "./componente-if/componente-if.component";
 import { ComponenteForComponent } from "./componente-for/componente-for.component";
 import { ViewChildComponent } from './view-child/view-child.component';
 import { MensajeService } from './mensaje.service';
+import { ListadoUsuariosComponent } from "./listado-usuarios/listado-usuarios.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NuevoComponenteComponent, InterpolacionComponent, PadreComponent, 
-            MostrarmensajeComponent, ReplicadorComponent, TwowaybandingComponent, ComponenteIFComponent, 
-            ComponenteForComponent, ViewChildComponent],//importa los nuevos componentes que se crean 
+  imports: [RouterOutlet, NuevoComponenteComponent, InterpolacionComponent, PadreComponent,
+    MostrarmensajeComponent, ReplicadorComponent, TwowaybandingComponent, ComponenteIFComponent,
+    ComponenteForComponent, ViewChildComponent, ListadoUsuariosComponent],//importa los nuevos componentes que se crean 
 
 
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'servicios en angular';
+  title = 'servicios Y observables en angular';
   mensaje:string;
 
 // inyectamos dependencia para inyectar el servicio 

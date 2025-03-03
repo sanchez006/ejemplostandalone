@@ -1,0 +1,17 @@
+
+<!-- desde aqui recibiremos la inyeccion del servicio y observable -->
+ <div class="row justify-content-center">
+    <div class="col-md-6">
+        <ul class="list-groupt">
+            @if(usuarios.length>0){
+                @for (usuario of usuarios; track usuario.id) {
+                    <li class="list-groupt-item"> {{usuario.id}} {{usuario.name}}</li>
+                }
+            }@else {
+                <li class="list-groupt-item text-danger"> no hay usuario disponibles</li>
+            }
+
+        </ul>
+    </div>
+    
+ </div>
